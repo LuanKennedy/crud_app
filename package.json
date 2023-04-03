@@ -4,7 +4,7 @@
   "description": "crud application",
   "main": "server.js",
   "engines":{
-    "node": "18.14.0"
+    "node": "14.x"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
