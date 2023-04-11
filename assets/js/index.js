@@ -12,6 +12,8 @@ $("#update_turma").submit(function(event){
         data[n['name']] = n['value']
     })
 
+    console.log(data)
+
     var request = {
         "url" : `https://ads-mackenzie.herokuapp.com/api/turmas/${data.id}`,
         "method" : "PUT",

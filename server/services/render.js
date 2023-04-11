@@ -1,7 +1,7 @@
 const axios = require('axios')
 
 exports.homeRoutesT = (req, res) =>{
-    axios.get('http://localhost:3000/api/turmas')
+    axios.get('https://ads-mackenzie.herokuapp.com/api/turmas')
     .then(function(response){
         res.render('index', { turmas : response.data});
     })
@@ -11,7 +11,7 @@ exports.homeRoutesT = (req, res) =>{
 }
 
 exports.homeRoutesD = (req, res) =>{
-    axios.get('http://localhost:3000/api/disciplinas')
+    axios.get('https://ads-mackenzie.herokuapp.com/api/disciplinas')
     .then(function(response){
         res.render('/', { disciplina : response.data });
     })
@@ -37,7 +37,7 @@ exports.add_disciplina = (req, res) =>{
 }
 
 exports.update_disciplina = (req, res) =>{
-    axios.get('http://localhost:3000/api/disciplinas', { params : { id : req.query.id }})
+    axios.get('https://ads-mackenzie.herokuapp.com/api/disciplinas', { params : { id : req.query.id }})
     .then(function(disciplinaData){
         res.render("update_disciplina", { disciplina : disciplinaData.data})
     })
@@ -49,7 +49,7 @@ exports.update_disciplina = (req, res) =>{
 
 exports.update_turma = (req, res) =>{
     debugger
-    axios.get('http://localhost:3000/api/turmas', { params : { id : req.query.id }})
+    axios.get('https://ads-mackenzie.herokuapp.com/api/turmas', { params : { id : req.query.id }})
     .then(function(turmadata){
         res.render("update_turma", { turma : turmadata.data})
     })
@@ -58,7 +58,7 @@ exports.update_turma = (req, res) =>{
     })
 }
 exports.update_professor = (req, res) =>{
-    axios.get('http://localhost:3000/api/professores', { params : { id : req.query.id }})
+    axios.get('https://ads-mackenzie.herokuapp.com/api/professores', { params : { id : req.query.id }})
     .then(function(professordata){
         res.render("update_professor", { professor : professordata.data})
     })
@@ -67,7 +67,7 @@ exports.update_professor = (req, res) =>{
     })
 }
 exports.update_aluno = (req, res) =>{
-    axios.get('http://localhost:3000/api/alunos', { params : { id : req.query.id }})
+    axios.get('https://ads-mackenzie.herokuapp.com/api/alunos', { params : { id : req.query.id }})
     .then(function(alunodata){
         res.render("update_aluno", { aluno : alunodata.data})
     })
