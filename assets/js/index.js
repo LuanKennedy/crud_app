@@ -12,10 +12,8 @@ $("#update_turma").submit(function(event){
         data[n['name']] = n['value']
     })
 
-    console.log(data)
-
     var request = {
-        "url" : `http://localhost:3000/api/turmas/${data.id}`,
+        "url" : `https://ads-mackenzie.herokuapp.com/api/turmas/${data.id}`,
         "method" : "PUT",
         "data" : data
     }
@@ -32,7 +30,7 @@ if(window.location.pathname == "/"){
         var id = $(this).attr("data-id")
 
         var request = {
-            "url" : `http://localhost:3000/api/turmas/${id}`,
+            "url" : `https://ads-mackenzie.herokuapp.com/api/turmas/${id}`,
             "method" : "DELETE"
         }
 
@@ -63,7 +61,7 @@ $("#update_disciplina").submit(function(event){
 
 
     var request = {
-        "url" : `http://localhost:3000/api/disciplinas/${data.id}`,
+        "url" : `https://ads-mackenzie.herokuapp.com/api/disciplinas/${data.id}`,
         "method" : "PUT",
         "data" : data
     }
@@ -80,7 +78,7 @@ if(window.location.pathname == "/"){
         var id = $(this).attr("data-id")
 
         var request = {
-            "url" : `http://localhost:3000/api/disciplinas/${id}`,
+            "url" : `https://ads-mackenzie.herokuapp.com/api/disciplinas/${id}`,
             "method" : "DELETE"
         }
 
@@ -111,7 +109,7 @@ $("#update_aluno").submit(function(event){
 
 
     var request = {
-        "url" : `http://localhost:3000/api/alunos/${data.id}`,
+        "url" : `https://ads-mackenzie.herokuapp.com/api/alunos/${data.id}`,
         "method" : "PUT",
         "data" : data
     }
@@ -128,7 +126,7 @@ if(window.location.pathname == "/"){
         var id = $(this).attr("data-id")
 
         var request = {
-            "url" : `http://localhost:3000/api/alunos/${id}`,
+            "url" : `https://ads-mackenzie.herokuapp.com/api/alunos/${id}`,
             "method" : "DELETE"
         }
 
@@ -159,7 +157,7 @@ $("#update_professor").submit(function(event){
 
 
     var request = {
-        "url" : `http://localhost:3000/api/professores/${data.id}`,
+        "url" : `https://ads-mackenzie.herokuapp.com/api/professores/${data.id}`,
         "method" : "PUT",
         "data" : data
     }
@@ -176,7 +174,7 @@ if(window.location.pathname == "/"){
         var id = $(this).attr("data-id")
 
         var request = {
-            "url" : `http://localhost:3000/api/professores/${id}`,
+            "url" : `https://ads-mackenzie.herokuapp.com/api/professores/${id}`,
             "method" : "DELETE"
         }
 
