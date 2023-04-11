@@ -27,5 +27,14 @@
     "morgan": "^1.10.0",
     "nodemon": "^2.0.22",
     "vercel": "^28.18.3"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuanKennedy/crud_app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/LuanKennedy/crud_app/issues"
+  },
+  "homepage": "https://github.com/LuanKennedy/crud_app#readme"
 }
