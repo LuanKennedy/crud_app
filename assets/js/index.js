@@ -12,8 +12,6 @@ $("#update_turma").submit(function(event){
         data[n['name']] = n['value']
     })
 
-    console.log(data)
-
     var request = {
         "url" : `https://ads-mackenzie.herokuapp.com/api/turmas/${data.id}`,
         "method" : "PUT",
@@ -29,9 +27,9 @@ $("#update_turma").submit(function(event){
 if(window.location.pathname == "/"){
     $ondelete = $(".table tbody td a.delete");
     $ondelete.click(function(){
-        var id = $(this).attr("data-id")
+        const id = $(this).attr("data-id")
 
-        var request = {
+        let request = {
             "url" : `https://ads-mackenzie.herokuapp.com/api/turmas/${id}`,
             "method" : "DELETE"
         }
@@ -63,7 +61,7 @@ $("#update_disciplina").submit(function(event){
 
 
     var request = {
-        "url" : `https://ads-mackenzie.herokuapp.com/api/disciplinas/${data.id}`,
+        "url" : `https://ads-mackenzie.herokuapp.com/disciplinas/${data.id}`,
         "method" : "PUT",
         "data" : data
     }

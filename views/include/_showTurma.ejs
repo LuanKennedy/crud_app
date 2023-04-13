@@ -1,5 +1,4 @@
 <% for(var i =0;i < turmas.length; i++){ %>
-
 <tr>
     <td><%=i + 1%></td>
     <td><%=turmas[i].name%></td>
@@ -10,9 +9,7 @@
             </span>
         </a>
         <a class="btn-border-shadow delete" data-id=<%=turmas[i]._id%>>
-            <span class="text-gradient">
-                <i class="fas fa-times"></i> 
-            </span>
+            <span class="text-gradient"><i class="fas fa-times"></i> </span>
         </a>
     </td>
 </tr>
